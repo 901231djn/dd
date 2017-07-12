@@ -1,0 +1,21 @@
+nav ul{
+    display: none;
+    float: none;
+}
+nav .box{
+    display: none;
+
+}
+nav ul li{
+    float: none;
+    width: 100%;
+}
+nav h2{
+    float: none;
+}
+nav .menu_btn{
+    display: block;
+}
+nav .box{
+    float: left;
+}

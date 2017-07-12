@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    <style>
+        /*.slide div{*/
+            /*background: grey;*/
+            /*border: 1px solid ;*/
+
+        /*}*/
+
+        ul{margin: 0;padding: 0;list-style: none}
+
+        .content{
+            margin-top: 10px;
+            padding-top: 10px;
+            background: url("img/banner4.jpg");
+            background-attachment: fixed;
+        }
+      
+        .banner1{
+            background: url("img/banner2.jpg");
+            background-position:  center 0;
+            height: 600px;
+        }
+        .banner2{
+            background: url("img/banner3.jpg");
+            background-position:  center 0;
+            height: 600px;
+        }
+        .navbar{
+            margin-bottom: 0;
+        }
+        .desc{
+            margin-top: 200px;
+            color: white;
+        }
+        /*.title-color{*/
+            /*background: skyblue;*/
+            /*border-top-right-radius: 6px;*/
+            /*border-top-left-radius: 6px;*/
+        /*}*/
+        .navbar-nav .active a{
+            background: skyblue;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="con col-xs-1tainer-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">超级英雄</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#carousel-example-generic">英雄介绍 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#content">英雄技能</a></li>
+                <li><a href="#footer">英雄模式</a></li>
+                <li><a href="#">英雄价格</a></li>
+                <li><a href="#">英雄力量</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+
+                    <div class="input-group">
+                        <span class="input-group-addon">@</span>
+                        <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+                        <span class="glyphicon  glyphicon-thumbs-up form-control-feedback" aria-hidden="true"></span>
+                    </div>
+
+
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+          
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+
+
+</nav>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox" >
+        <div class="item active">
+            <div class="banner1 row" >
+                <div class="desc col-md-4 col-md-offset-2">
+                    <h1>蜘蛛侠</h1>
+                    <p>蜘蛛侠的本名彼得·本杰明·帕克（Peter Benjamin Parker），原本是一名普通的高中生，后意外的被一只受过放射性感染的蜘蛛咬伤后，获得蜘蛛一般的特殊能力。</p>
+                    <a class="btn btn-info btn-lg"  data-toggle="modal" data-target="#myModal">了解更多</a> </div>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="banner2 row">
+                <div class="desc col-md-4 col-md-offset-2">
+                    <h1>蜘蛛侠</h1>
+                    <p>蜘蛛侠的本名彼得·本杰明·帕克（Peter Benjamin Parker），原本是一名普通的高中生，后意外的被一只受过放射性感染的蜘蛛咬伤后，获得蜘蛛一般的特殊能力。</p>
+                    <a class="btn btn-info btn-lg">了解更多</a> </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+    </a>
+</div>
+
+<section id="content" class="content">
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="thumbnail">
+                  <img  src="img/thumbnail1.jpg" alt="...">
+                  <div class="caption">
+                      <h3>野兽</h3>
+                      <p>拥有超群的智慧，绝顶聪明</p>
+                      <p><a href="#" class="btn btn-primary" role="button">了解详情</a> <a href="#" class="btn btn-default" role="button">查看更多</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail"> <img class="show-pic" src="img/thumbnail2.jpg">
+                  <div class="caption">
+                      <h3>快银</h3>
+                      <p>拥有超群的智慧，绝顶聪明</p>
+                      <p><a href="#" class="btn btn-primary" role="button">了解详情</a> <a href="#" class="btn btn-default" role="button">查看更多</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail"> <img class="show-pic" src="img/thumbnail3.jpg">
+                  <div class="caption">
+                      <h3>x教授</h3>
+                      <p>拥有超群的智慧，绝顶聪明</p>
+                      <p><a href="#" class="btn btn-primary" role="button">了解详情</a> <a href="#" class="btn btn-default" role="button">查看更多</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail"> <img class="show-pic" src="img/thumbnail4.jpg">
+                  <div class="caption">
+                      <h3>特拉斯克</h3>
+                      <p>拥有超群的智慧，绝顶聪明</p>
+                      <p><a href="#" class="btn btn-primary" role="button">了解详情</a> <a href="#" class="btn btn-default" role="button">查看更多</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-3">
+              <div class="thumbnail"> <img class="show-pic" src="img/thumbnail5.jpg">
+                  <div class="caption">
+                      <h3>金刚狼</h3>
+                      <p>拥有超群的智慧，绝顶聪明</p>
+                      <p><a href="#" class="btn btn-primary" role="button">了解详情</a> <a href="#" class="btn btn-default" role="button">查看更多</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail"> <img class="show-pic" src="img/thumbnail6.jpg">
+                  <div class="caption">
+                      <h3>法官</h3>
+                      <p>拥有超群的智慧，绝顶聪明</p>
+                      <p><a href="#" class="btn btn-primary" role="button">了解详情</a> <a href="#" class="btn btn-default" role="button">查看更多</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail"> <img class="show-pic" src="img/thumbnail7.jpg">
+                  <div class="caption">
+                      <h3>魔型女</h3>
+                      <p>拥有超群的智慧，绝顶聪明</p>
+                      <p><a href="#" class="btn btn-primary" role="button">了解详情</a> <a href="#" class="btn btn-default" role="button">查看更多</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="thumbnail"> <img class="show-pic" src="img/thumbnail8.jpg">
+                  <div class="caption">
+                      <h3>暴风女</h3>
+                      <p>拥有超群的智慧，绝顶聪明</p>
+                      <p><a href="#" class="btn btn-primary" role="button">了解详情</a> <a href="#" class="btn btn-default" role="button">查看更多</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</section>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header title-color">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title " id="myModalLabel">蜘蛛侠</h4>
+            </div>
+            <div class="modal-body">
+                蜘蛛侠的本名彼得·本杰明·帕克（Peter Benjamin Parker），原本是一名普通的高中生，后意外的被一只受过放射性感染的蜘蛛咬伤后，获得蜘蛛一般的特殊能力。
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<footer id="footer" class="well">
+     <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+                <h4>超级英雄相关电影</h4>
+                <p>喜爱超级英雄的朋友们，开来加入我们的队伍吧。</p>
+            </div>
+             <div class="col-md-6">
+                 <div class="row">
+                     <div class="col-md-3">
+                         <h5>蝙蝠侠系列</h5>
+                         <ul>
+                             <li><a>蝙蝠侠</a></li>
+                             <li><a>蝙蝠侠与罗宾</a></li>
+                             <li><a>蝙蝠侠归来</a></li>
+                             <li><a>蝙蝠侠前传</a></li>
+                         </ul>
+                     </div>
+                     <div class="col-md-3">
+                         <h5>X战警系列</h5>
+                         <ul>
+                             <li><a>X战警</a></li>
+                             <li><a>X战警前传</a></li>
+                             <li><a>X战警金刚狼</a></li>
+                         </ul>
+                     </div>
+                     <div class="col-md-3">
+                         <h5>蜘蛛侠系列</h5>
+                         <ul>
+                             <li><a>蜘蛛侠1</a></li>
+                             <li><a>蜘蛛侠2</a></li>
+                             <li><a>蜘蛛侠3</a></li>
+                         </ul>
+                     </div>
+                     <div class="col-md-3">
+                         <h5>复仇者联盟系列</h5>
+                         <ul>
+                             <li><a>复仇者联盟1</a></li>
+                             <li><a>复仇者联盟2</a></li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+</footer>
+
+</body>
+</html>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
